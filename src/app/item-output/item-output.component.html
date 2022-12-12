@@ -1,0 +1,14 @@
+<h2>Child component with @Output()</h2>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <p><b>Add Item:</b></p>
+            <input class="form-control form-control-lg" type="text" placeholder="Inser a new item." #newItem>            
+        </div>
+        <br>
+        <div class="row">
+            <button (click)="addItem(newItem.value)" class="btn btn-primary">Add to parent's list</button>
+        </div>
+
+    </div>
+</div>
